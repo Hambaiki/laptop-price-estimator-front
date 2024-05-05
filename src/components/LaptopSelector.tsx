@@ -122,8 +122,8 @@ function LaptopSelector() {
             </select>
           </div>
         ))}
-        {numericOptions.map((option) => (
-          <div className="flex items-center justify-between">
+        {numericOptions.map((option, index) => (
+          <div key={index} className="flex items-center justify-between">
             <label className="w-32 shrink-0" htmlFor="ram">
               {option.title}
             </label>
